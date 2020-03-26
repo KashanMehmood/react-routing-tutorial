@@ -1,6 +1,7 @@
 import React from 'react';
 import Home from './component/Home.js';
 import About from './component/About.js';
+import Contact from './component/Contact.js';
 import { createBrowserHistory } from "history";
 import {
     BrowserRouter as Router,
@@ -29,15 +30,21 @@ function CustomRoutes() {
                         <li>
                             <Link to="/about">About</Link>
                         </li>
+                        <li>
+                            <Link to="/contact">Contact</Link>
+                        </li>
                     </ul>
                 </nav>
 
                 <Switch>
-                    <Route exact path="/about">
+                    <Route exact path="/">
+                        <Home />
+                    </Route>
+                    <Route  path="/about">
                         <About />
                     </Route>
-                    <Route path="/">
-                        <Home />
+                    <Route path="/contact">
+                        <Contact />
                     </Route>
                 </Switch>
             </div>
