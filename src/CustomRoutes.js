@@ -43,7 +43,7 @@ function CustomRoutes() {
                     <Route  path="/about">
                         <About />
                     </Route>
-                    <Route path="/contact">
+                    <Route path="/contact/:id">
                         <Contact />
                     </Route>
                 </Switch>

@@ -6,6 +6,7 @@ class Contact extends React.Component {
     return (
       <div>
         <h1>Hello, Contact Component</h1>
+        <h3> Contact { this.props.match.params.id }</h3>
       </div>
     );
   }

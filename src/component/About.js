@@ -1,5 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 class About extends React.Component {
 
@@ -15,7 +16,7 @@ class About extends React.Component {
   }
 
   routeToContact(){
-    this.props.history.push('/contact');
+    this.props.history.push('/contact/2643');
   }
 
   render() {
@@ -28,6 +29,17 @@ class About extends React.Component {
         <button type="button" onClick={this.routeToContact}>
           Go Contact
         </button>
+        <ul>
+          <li>
+            <Link to="/contact/1" >Contact 1</Link>
+          </li>
+          <li>
+            <Link to="/contact/2" >Contact 2</Link>
+          </li>
+          <li>
+            <Link to="/contact/3" >Contact 3</Link>
+          </li>
+        </ul>
       </div>
     );
   }
