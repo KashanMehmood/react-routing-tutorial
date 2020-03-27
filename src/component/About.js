@@ -31,13 +31,13 @@ class About extends React.Component {
         </button>
         <ul>
           <li>
-            <Link to="/contact/1" >Contact 1</Link>
+            <Link to="/contact/2641" >Contact 1</Link>
           </li>
           <li>
-            <Link to="/contact/2" >Contact 2</Link>
+            <Link to="/contact/2642" >Contact 2</Link>
           </li>
           <li>
-            <Link to="/contact/3" >Contact 3</Link>
+            <Link to="/contact/2643" >Contact 3</Link>
           </li>
         </ul>
       </div>
